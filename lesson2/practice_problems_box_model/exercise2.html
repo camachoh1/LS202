@@ -1,0 +1,39 @@
+<!-- The answer is the same as the prevous exercise: width: 580px and height: 360px.
+
+The only difference here is that the `section` is using `display-mode: block` which means that unlike the `img` from the previous exercise, the `section` won't appear adjacent to other elements. It will always be on a line by itself. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+          background-color: lightgray;
+          border: 1px solid black;
+          box-sizing: border-box;
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          width: 580px;
+          height: 360px;
+          }
+
+        section {
+            border: 4px solid red;
+            box-sizing: content-box;
+            display: block;
+            height: 300px;
+            margin: 20px 19px 10px 11px;
+            padding: 10px 20px;
+            width: 500px;
+            }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <section>content</section>
+    </div>
+  </body>
+</html>

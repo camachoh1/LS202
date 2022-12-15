@@ -1,0 +1,42 @@
+<!-- Since the `em` element is `inline`, the browser will ignore the width, height, and top and bottom margins specified in the CSS. So we need to assume the width and height values of the `em`. 
+
+Asumming the height of the `em` is 20px, we add all the vertical values of the `em`(top and bottom borders, padding, margins ) as well as the top and bottom values for the div borders. 
+
+Assuming the width of the `em` is 50px, then we apply the same operation, this time with the horizontal values of the `em` (left and right borders, padding, margins) as well as the left and right borders of the `div`. 
+
+Since the div uses `box-sizing`, it must have width: 130px and height: 50px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        background-color: lightgray;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 130px;
+        }
+
+        em {
+          border: 4px solid red;
+          box-sizing: content-box;
+          display: inline;
+          height: 300px;
+          margin: 20px 19px 10px 11px;
+          padding: 10px 20px;
+          width: 500px;
+          }
+    </style>
+  </head>
+  <body>
+    <div>
+      <em>content</em>
+    </div>
+  </body>
+</html>

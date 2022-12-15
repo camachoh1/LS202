@@ -1,0 +1,43 @@
+<!-- The `article` has the `box-sizing` set to `border-box`, we must ignore the padding and border to calculate the actual dimensions. 
+
+The values are calculated directly from the CSS since `article` is `inline-block`
+
+heigh: 332px
+width: 532px -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        background-color: lightgray;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 332px;
+        width: 532px;
+        }
+
+      article {
+        border: 4px solid red;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 300px;
+        margin: 20px 19px 10px 11px;
+        padding: 10px 20px;
+        width: 500px;
+      }   
+    </style>
+  </head>
+  <body>
+    <div>
+      <article>content</article>
+    </div>
+  </body>
+</html>

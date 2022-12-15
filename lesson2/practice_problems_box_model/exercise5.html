@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div {
+        background-color: lightgray;
+        border: 1px solid black;
+        box-sizing: content-box;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 720px;
+        }
+
+      tag1, tag2 {
+        box-sizing: border-box;
+        height: 240px;
+        margin: 0;
+        padding: 0;
+        width: 360px;
+      }
+
+      tag1 {
+        background-color: yellow;
+      }
+
+      tag2 {
+        background-color: lime;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <tag1>content</tag1><tag2>content</tag2>
+    </div>
+  </body>
+</html>
+
+<!-- based on the code above the pair of elements will appear side by side if we have the following configurations: both elements are `inline`, both elements are `inline-block` elements, one element is `inline` and the other is `inline-block`. 
+
+`inline` elements width is defined by the actual content area as determined by the browser. The width propery doesn't affect `inline` elements.-->
